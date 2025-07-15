@@ -1,0 +1,129 @@
+.review{
+    padding: 15vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12vh;
+    min-height: 100vh;
+}
+
+.review-container{
+    border : 2px solid rgba(255,255, 255,0.3);
+    width: 90%;
+    height: 80vh;
+    border-radius: 2vh;
+    display: flex;
+}
+
+.review-output-conatiner{
+    width: 50%;
+    background-color: rgba(255,255,255,0.1);
+}
+
+
+.review-code-input {
+    height: 100%;
+    width: 50%;
+    border-left: 8px solid #333;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.review-code-navbar {
+    height: 10%;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.1);
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 0px 0px 0px 10px;
+}
+
+.review-code-inactive-button {
+    background-color: rgba(0, 0, 0,0.5);
+    border: none;
+    border-radius: 0.5vw 0.5vw 0px 0px;
+    color: white;
+    height: 70%;
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3vw;
+    cursor: pointer;
+    gap : 1vh;
+    padding-left: 1vw;
+}
+
+.review-code-active-button {
+    background-color: rgba(0,0,0, 0.2);
+    border: 1px solid #333;
+    border-radius: 0.5vw 0.5vw 0px 0px;
+    border-bottom: none;
+    color: rgb(77, 175, 200);
+    height: 70%;
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3vw;
+    text-shadow: 0 0 10px rgba(77, 175, 200, 0.3), 0 0 10px rgba(77, 175, 200, 0.3), 0 0 10px rgba(77, 175, 200, 0.3);
+    cursor: pointer;
+    gap: 1vh;
+    padding-left: 1vw;
+}
+
+.review-code-input-body {
+    height: 90%;
+    width: 100%;
+    overflow: auto;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  
+    backdrop-filter: blur(100px);
+    background-color: rgba(255, 255, 255, 0.1); 
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.1);
+    color : white;
+    scrollbar-width: 0px;
+}
+
+.review-code-input-body::-webkit-scrollbar{
+    display: none;
+}
+
+.review-code-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap : 2vw;
+    width: 80%;
+}
+
+.review-code-buttons button{
+    width: 15vw;
+    height: 7vh;
+    overflow: hidden;
+    font-size: 1em;
+    padding: 2vh 1vw;
+    border: 2px solid #333;
+    border-radius: 1vh;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-code-buttons button:hover{
+    filter: invert(100%);
+}
+
+
+

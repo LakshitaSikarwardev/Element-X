@@ -1,0 +1,53 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@codemirror/lang-css": "^6.3.1",
+    "@codemirror/lang-html": "^6.4.9",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@react-oauth/google": "^0.12.1",
+    "@uiw/codemirror-theme-dracula": "^4.23.7",
+    "@uiw/codemirror-theme-solarized": "^4.23.10",
+    "@uiw/react-codemirror": "^4.23.7",
+    "aos": "^2.3.4",
+    "codemirror": "^6.0.1",
+    "framer-motion": "^12.5.0",
+    "gsap": "^3.12.7",
+    "html2canvas": "^1.4.1",
+    "lucide-react": "^0.479.0",
+    "ogl": "^1.0.11",
+    "prism": "^1.0.0",
+    "prismjs": "^1.29.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.0.1",
+    "react-loading-skeleton": "^3.5.0",
+    "react-router-dom": "^6.22.0",
+    "react-shadow": "^20.6.0",
+    "react-slick": "^0.30.2",
+    "react-slider": "^2.0.6",
+    "react-window": "^1.8.11",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "prettier": "^3.4.2",
+    "vite": "^5.1.0"
+  }
+}

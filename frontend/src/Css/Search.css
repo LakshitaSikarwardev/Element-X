@@ -1,0 +1,32 @@
+.search{
+    padding-top: 12vh;
+}
+
+.searchimages{
+    height: 40vh;
+}
+
+.search-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.search-header{
+    /* border: 2px solid red; */
+    height: 12vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.search-header-text{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: "inter";
+}

@@ -1,0 +1,205 @@
+.login-page{
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	padding-top: 15vh;
+}
+
+.login,.email-verify{
+	padding-bottom: 10vh;
+	color : white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+.login-form,.email-verify-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 1vw;
+	width: 100%;
+	position: relative;
+}
+
+.cross-email-verification{
+	position: absolute;
+	right: 2vw;
+	top: 3vh;
+	padding: 1.5vh 1vw;
+	border-radius: 100%;
+	font-weight: bold;
+	font-size: large;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background-color: #333;
+	color: white;
+	transition: 500ms;
+}
+
+.email-buttons{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.cross-email-verification:hover{
+	filter: invert(100%);
+}
+
+.email-verify-form{
+	border : 2px solid white;
+	font-size: x-large;
+	font-weight: 500;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	gap : 5vh;
+	padding: 5vh 1vw;
+	height: 70vh;
+}
+
+.email-heading{
+	text-align: center;
+}
+
+.email-input{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.email-input input{
+	width: 10%;
+	padding: 4vh 2vw;
+	border-radius: 1vh;
+	background-color: #333;
+	border: none;
+	color : white;
+	outline: white;
+	font-weight: bolder;
+	font-size: large;
+	flex-shrink: 0;
+}
+
+.login-heading{
+	font-size: xx-large;
+	padding: 3vh;
+	font-weight: bolder;
+}
+
+.login-method{
+	display: flex;
+	flex-direction: column;
+}
+
+.login-inputs{
+	display: flex;
+	flex-direction: column;
+	padding : 2vh 5vw 1vh 1vw;
+	gap : 4vh;
+	width: 80vh;
+	position: relative;
+}
+
+.faded-line{
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(to right, transparent, white, transparent);
+}
+.login-input{
+	padding : 2vh;
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 1vh;
+	outline-width: 0px;
+	outline-color: #333;
+	color : black;
+	position: relative;
+}
+
+.password-conatiner{
+	position: relative;
+}
+
+.password-visible{
+	position: absolute;
+	cursor: pointer;
+	top : 25%;
+	right: 3%;
+}
+
+.login-button{
+	padding: 2vh 1vw;
+	height: 6vh;
+	overflow: hidden;
+	width: 30%;
+	position: relative;
+	border-radius: 1vh;
+	border: none;
+	background-color: #333;
+	font-weight: bold;
+	transition: 500ms;
+	color : white;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-button:hover{
+	filter: invert(100%);
+}
+
+.Login-using{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	flex-direction: column;
+	gap : 2vh;
+	padding: 1vh 0vh;
+}
+.other-login-methods{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap : 1vw;
+	font-size: x-large;
+	cursor: pointer;
+	padding-bottom: 1vh;
+}
+
+.new-user{
+	display: flex;
+	padding: 1vh 0;
+	font-size: small;
+	gap : 1vh;
+}
+
+.sign-up{
+	cursor: pointer;
+	color : rgb(255, 0, 0);
+	text-decoration: underline;
+}
+
+.error-message-while-login{
+	color : red;
+}
+
+@media  screen and (max-width : 768px) {
+	.login-inputs{
+		width: 90vw;
+	}
+	.login{
+		height: 100vh;
+	}
+}

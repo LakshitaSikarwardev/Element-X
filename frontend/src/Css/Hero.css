@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&family=Oswald&display=swap');
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(to left,#041638 0%, #171717 40%);
+    backdrop-filter: blur(100%);
+    gap : 10vh;
+    padding-top: 10vh;
+}
+
+.UpperCon {
+    z-index: 1;
+    width: 100vw;
+    padding-top: 7%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading1 {
+    font-size: 4vw;
+    font-weight: 1000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: capitalize;
+}
+
+.subheading {
+    color: #F2F2F2;
+    margin-left: 1%;
+    font-size: 2vw;
+}
+
+.heading2 {
+    color: rgb(77, 175, 200);
+    font-size: 3vw;
+}
+
+.heading2 span {
+    color: white;
+}
+
+.heading2 span span {
+    color: rgb(77, 175, 200);
+    animation: blink 700ms infinite;
+}
+
+.heading3 {
+    color: #9CA3AF;
+    font-size: 1.2vw;
+    padding: 2%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: capitalize;
+}
+
+.beautiful {
+    color: purple;
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: capitalize;
+}
+
+.uppercon-left,.upperCon-right {
+    width: 45vw ;
+    height: 61vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.upperCon-right{
+    align-items: center;
+}
+
+
+
+.input-container {
+    display: flex;
+    height: 7vh;
+    width: 35vw;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: 20vw;
+}
+
+
+.input {
+    border-top-left-radius: 20vw;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2vw;
+    border-bottom-left-radius: 20vw;
+    border: none;
+    border-right: 2px solid #212121;
+    background: #D1D5DB;
+    outline: none;
+    text-align: start;
+    padding-left: 2vw;
+}
+
+.searchButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 21vw;
+    border-bottom-right-radius: 21vw;
+    background: #D1D5DB;
+    border-left: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2vw;
+    height: 100%;
+    width: 30%;
+}
+
+.main-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container:hover {
+    border: 2px solid #16b7ed;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.boxes img{
+    width: 100%;
+}
+
+.Explore-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    border: 2px solid white;
+    margin-top: 5vh;
+}
+
+.Explore-all-button{
+    padding : 2vh 5vw;
+    border-radius: 1vw;
+    border : 2px solid transparent;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: #212121;
+    color : white;
+}
+
+.Explore-all-button:hover{
+    filter : invert(100%);
+}
+
+.mobile-view{
+    display: none;
+}
+
+.hero-scroll-down{
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    top: 45vh;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: large;
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.hero-scroll-circle{
+    height: 4em;
+    width: 4em;
+    border-radius: 100%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    animation: down 1000ms linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (min-width : 576px ) and (max-width : 768px){
+    .UpperCon{
+        padding-top: 0;
+        height: 50vh;
+    }
+    .input-container {
+        height: 5vh;
+        width: 45vw;
+        margin-top: 1vh;
+    }
+    .input,.searchButton {
+        font-size: 0.6em;
+    }
+    .heading1 {
+        font-size: 2em;
+    }
+    .heading2 {
+        font-size: 1.3em;
+    }
+    .heading3 {
+        font-size: 0.7em;
+    }
+    .subheading {
+        font-size: 1em;
+    }
+    .Explore-all{
+        margin-top: 0;
+    }
+    .Explore-all-button{
+        padding: 0.5em 2em;
+        font-size: 1em;
+    }
+    .mobile-view{
+        display: block;
+    }
+    .hero-scroll-down{
+        display: flex;
+        top: 60vh;
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width : 576px){
+    .UpperCon{
+        padding-top: 10vh;
+        height: 40vh;
+        justify-content: start;
+        padding-left: 10vw;
+        position: relative;
+    }
+    .upperCon-right{
+        display: none !important;
+    }
+    .uppercon-left{
+        height: 100%;
+        width: 100%;
+    }
+    .heading1{
+        font-size: 2.5em;
+    }
+    .heading2{
+        font-size: 1.7em;
+    }
+    .subheading{
+        font-size: 1em;
+    }
+    .heading3{
+        font-size: 0.6em;
+        letter-spacing: 2px;
+    }
+    .beautiful{
+        font-size: 1.2em;
+    }
+    .input-container{
+        width: 80vw;
+    }
+    .input{
+        font-size: 0.6em;
+    }
+    .searchButton{
+        font-size: 0.6em;
+    }
+    .Explore-all{
+        margin-top: 0;
+    }
+    .Explore-all-button{
+        padding: 0.5em 2em;
+        font-size: 0.8em;
+    }
+    .mobile-view{
+        display: block;
+    }
+    .hero-scroll-down{
+        display: flex;
+        gap: 2em;
+    }
+    .Explore-all{
+        margin-top: 0;
+        padding: 0;
+    }
+
+    @keyframes down{
+        0%{
+            transform: translateY(10%);
+        }
+        50%{
+            transform: translateY(-10%);
+        }
+        100%{
+            transform: translateY(10%);
+        }
+    }
+}
